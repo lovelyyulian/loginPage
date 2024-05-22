@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+body {
+    height: 100vh;
+    background: url("https://th.bing.com/th/id/R.c00808ab8d8b617f37ccd71a81f59cc5?rik=jQXM0G3i2JbxCw&pid=ImgRaw&r=0");
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginContainer {
+    width: 250px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.112);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.482);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#loginContainer h1 {
+    margin-bottom: 10px;
+}
+
+.inputField {
+    position: relative;
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField input{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.348);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.inputField input:hover {
+    background-color: rgba(255, 255, 255, 0.214);
+    border: 1px solid rgba(255, 255, 255, 0.348);
+}
+
+.inputField input:focus, input:not(:placeholder-shown) {
+    background-color: rgba(143, 140, 140, 0.214);
+    border: 1px solid rgba(255, 255, 255, 0.348);
+}
+
+.inputField label {
+    position: relative;
+    height: 20px;
+    top: -30px;
+    left: 10px;
+    color: white;
+    pointer-events: none;
+}
+
+.inputField input:focus + label, input:not(:placeholder-shown) + label {
+    font-size: 14px;
+    font-weight: 400;
+    top: -60px;
+}
+
+.inputField a {
+    position: relative;
+    align-self: flex-end;
+    top: -20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.inputField a:hover {
+    color: rgb(177, 177, 177);
+}
+
+#buttonContainer {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#buttonContainer button {
+    width: 48%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: 0;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: .3s ease-in-out;
+}
+
+#registerButton {
+    background-color: transparent;
+    border: 2px solid rgb(2, 208, 2);
+}
+
+#registerButton:hover {
+    background-color: rgb(2, 208, 2, 0.49)
+}
+
+#loginButton {
+    background-color: rgb(2, 208, 2);
+    border: 2px solid transparent;
+    
+}
+
+#loginButton:hover {
+    background-color: rgb(2, 208, 2, 0.49);
+    border: 2px solid rgb(2, 208, 2);
+}
+
+#igAdress {
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    bottom: 0;
+    margin-bottom: 30px;
+    right: 30px;
+
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.489);
+}
+
+#igAdress:hover {
+    background-color: rgba(255, 255, 255, 0.193);
+    backdrop-filter: blur(10px);
+}   
